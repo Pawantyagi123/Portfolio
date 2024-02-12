@@ -24,54 +24,52 @@ function closebar(){
   document.querySelector('.hideOnDesktop').style.display = 'block';
     }
 
+    document.addEventListener('DOMContentLoaded', function () {
+        var sidebarTags = document.querySelectorAll('.sidebar a');
+    
+        sidebarTags.forEach(function (tag) {
+            tag.addEventListener('click', function (e) {
+                var targetId = this.getAttribute('href'); // Get the target ID from href attribute
+                
+                // Check if the clicked tag is for the "Contact" page
+                if (targetId === "#contact") {
+                    // Do nothing if the clicked tag is for the "Contact" page
+                    return;
+                }
+    
+                e.preventDefault(); // Prevent default anchor behavior
+                
+                var targetElement = document.querySelector(targetId); // Find the target element by ID
+    
+                if (targetElement) {
+                    // Scroll to the top of the target element
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    });
   
-    function sendemail() {
-      let email = document.getElementById('email').value;
-      let name = document.getElementById('name').value;
-      let subject = document.getElementById('subject').value;
-      let phone = document.getElementById('phone').value;
+    function sendMail(){
+        (
+            function(){
+                emailjs.init("w6GpD7c85kwg7tSdH");
+            }
+        )();
+        
+        let params = {
+            Name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            phone: document.getElementById("phone").value,
+            subject: document.getElementById("subject").value,
+            message: document.getElementById("message").value
+        }
 
-
-      body_msg = "name :" + name + "<br> email :" + email + "<br> phone :" + phone;
-       console.log(email)
-      Email.send({
-          SecureToken: "24fb0d08-3823-425f-b387-b61a3df5ff47",
-          To: 'tyagipawan2002@gmail.com',
-          From: email,
-          Subject: subject,
-          Body: body_msg
-      }).then(
-          message => alert("Your Message Received")
-      );
-      document.getElementById("submit").innerHTML = "done"
-
-      setTimeout(function () {
-
-          document.getElementById("submit").innerHTML = "Send Message";
-      }, 5000);
-
-      Thankyou(email);
-      return true;
-
-     
-  };
-
-  function Thankyou(email) {
-      console.log(email)
-      
-      Email.send({
-          SecureToken: "24fb0d08-3823-425f-b387-b61a3df5ff47",
-          To: email,
-          From: "tyagipawan2002@gmail.com",
-          Subject: "Contact Form",
-          Body: "Thankyou"
-      }).then(
-          message => {
-              alert("Thankyou For Contact Us");
-
-          }
-      );
-      console.log(email)
-  }
-
- 
+        let serviceId = "service_nfd5w6t";
+        let templeteId = "template_4j0o9re";
+       
+        emailjs.send(serviceId,templeteId,params)
+        .then( res =>{
+         alert("Email Sent Successfully")
+        })
+    }
+    
