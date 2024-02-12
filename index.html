@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body> 
+<!-- navbar -->
+    <div class="home">
+    <nav>
+        <ul class="sidebar">
+         <li onclick="closebar()"><a href="#"><i class="fa-solid fa-xmark" style="font-size: 40px;"></i></a></li>
+         <li><a class="active" href="/home.html">Home</a></li>
+         <li><a href="/about.html">About</a></li>
+         <li><a href="/project.html">Projects</a></li>
+         <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <ul>
+         <li class="logo"><a href="">Portfolio</a></li>
+         <li class="hideOnMobile"><a class="active" href="/home.html">Home</a></li>
+         <li class="hideOnMobile"><a href="/about.html">About</a></li>
+         <li class="hideOnMobile"><a href="/project.html">Projects</a></li>
+         <li class="hideOnMobile"><a href="/contact.html">Contact</a></li>
+         <li onclick="showsidebar()" class="hideOnDesktop"><a href="#"><i class="fa-solid fa-bars" style="font-size: 30px;"></i></a></li>
+        </ul>
+        </nav>
+
+        <!-- content -->
+<div class="home-container">
+    <div class="home-info">
+<img src="/assest/profilepic.jpg">
+<div class="name">
+   <span>Hi</span>
+   <span>I'</span>
+   <span>A</span>
+   <span>M</span>&nbsp;
+   <span>P</span>
+   <span>A</span>
+   <span>W</span>
+   <span>A</span>
+   <span>N</span>
+</div>
+    <p> I'm a <span> Frontend web developer</span> from the <span>India</span>. I have been working as
+        a freelance web developer since 2023 and specialize in building custom websites
+        using <span>HTML5, CSS3, JavaScript, ReactJS, Node.js, Express.js</span> 
+        and other technologies. </p>
+        <button class="button"><a href="/project">Projects</a></button>
+</div>
+</div>
+</div>
+
+<!-- footer -->
+<footer>
+    <div class="social-media">
+        <ul>
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </div>
+    <div class="text">
+        <p> &copy; copyright 2024 made by pawan</p>
+    </div>
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
