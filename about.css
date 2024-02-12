@@ -188,3 +188,18 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 }
 
 }
+
+nav {
+    background-color: black;
+    backdrop-filter: blur(5px);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    border: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    height: 80px;
+    padding-top: 10px;
+  }

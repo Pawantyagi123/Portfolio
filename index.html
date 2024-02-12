@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-compatible" content="ie=edge">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body> 
@@ -14,23 +17,23 @@
     <nav>
         <ul class="sidebar">
          <li onclick="closebar()"><a href="#"><i class="fa-solid fa-xmark" style="font-size: 40px;"></i></a></li>
-         <li><a class="active" href="#">Home</a></li>
-         <li><a href="/about.html">About</a></li>
-         <li><a href="/project.html">Projects</a></li>
-         <li><a href="/contact.html">Contact</a></li>
+         <li><a class="active" href="#home">Home</a></li>
+         <li><a href="#about">About</a></li>
+         <li><a href="#project">Projects</a></li>
+         <li><a href="#contact">Contact</a></li>
         </ul>
         <ul>
          <li class="logo"><a href="">Portfolio</a></li>
-         <li class="hideOnMobile"><a class="active" href="#">Home</a></li>
-         <li class="hideOnMobile"><a href="/about.html">About</a></li>
-         <li class="hideOnMobile"><a href="/project.html">Projects</a></li>
-         <li class="hideOnMobile"><a href="/contact.html">Contact</a></li>
+         <li class="hideOnMobile"><a class="active" href="#home">Home</a></li>
+         <li class="hideOnMobile"><a href="#about">About</a></li>
+         <li class="hideOnMobile"><a href="#project">Projects</a></li>
+         <li class="hideOnMobile"><a href="#contact">Contact</a></li>
          <li onclick="showsidebar()" class="hideOnDesktop"><a href="#"><i class="fa-solid fa-bars" style="font-size: 30px;"></i></a></li>
         </ul>
         </nav>
 
         <!-- content -->
-<div class="home-container">
+<div class="home-container" id="home">
     <div class="home-info">
 <img src="./assest/profilepic.jpg">
 <div class="name">
@@ -48,11 +51,114 @@
         a freelance web developer since 2023 and specialize in building custom websites
         using <span>HTML5, CSS3, JavaScript, ReactJS, Node.js, Express.js</span> 
         and other technologies. </p>
-        <button class="button"><a href="/project">Projects</a></button>
+        <button class="button"><a href="#project">Projects</a></button>
 </div>
 </div>
 </div>
 
+<div class="about-container" id="about">
+    <div class="head">
+      <h2>ABOUT ME</h2>
+      <div></div>
+      <p>
+        Here you will find more information about me, what I do, and my
+        current skills mostly in terms of programming and technology
+      </p>
+    </div>
+    <div class="about">
+      <div class="about-text">
+      <h1>Get to know me!</h1>
+      <p>I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.</p>
+      <p>I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.
+      </p>
+      <div class="links">
+        <a class="contact" href="#contact">Contact</a>
+        <a class="resume" href="/assest/back.jpg" download>Download resume</a>
+      </div>
+  </div> 
+
+  <div class="skill-item">
+    <h1 style="margin-bottom: 20px;">Skills</h1>
+    <div class="skill">
+      <div>Html5</div>
+      <div>Css3</div>
+      <div>JavaScript</div>
+      <div>ReactJS basic</div>
+      <div>Node basic</div>
+      <div>Express basic</div>
+      <div>Mongodb basic</div>
+    </div>
+  </div>
+    </div>
+  </div>
+
+  <!-- project -->
+  <div class="project-container" id="project">
+    <div class="project-head">
+        <h1>Projects</h1>
+        <div></div>
+        <p>Here you will find some of the personal projects that I created with each project containing its own live link</p>
+    </div>
+    <div class="project-content">
+    <div class="project-card">
+        <div class="image">
+           <img src="/assest/project1.png" alt="project">
+        </div>
+        <div class="project-text">
+        <h1>Netflix clone</h1>
+        <div>
+            <p>Netflix clone is fully responsive website and it was design using html,css and javascript. It has a user-friendly interfaceand responsive
+            </p>
+        </div>
+        </div>
+            <a href="https://netflixwebclones.netlify.app/" target="_blank">Live demo</a>
+        </div>
+    <div class="project-card">
+        <div class="image">
+            <img src="/assest/project2.png" alt="project2 image">
+        </div> 
+        <div class="project-text">
+            <h1>Airbnb clone</h1>
+            <p>It is a fully responsive website which is a complete <span>MVC</span> project using backend technology <span>Node.js, Mongoodb, Express.js</span></p>
+        </div>
+        <a href="https://airbnb-clone-71tw.onrender.com" target="_blank">Live demo</a>
+    </div>
+    <div class="project-card">
+       <div class="image">
+        <img src="/assest/projec3.png" alt="project3 image">
+       </div>
+       <div class="project-text">
+        <h1>Home construction</h1>
+        <p>It is a fully responsive website which is a complete. This website is develope using <span>Html,Css and bootstrap only</span></p>
+       </div>
+       <a href="https://homeconstruction.netlify.app/" target="_blank">Live demo</a>
+    </div>
+    </div>
+    </div>
+    <!-- contact -->
+    <div class="contact-container" id="contact">
+        <div class="contact-form">
+         <h1>Contact Us</h1>
+         <form onsubmit="sendemail(); reset(); return false;">
+             <label for="name">Your Name:</label>
+             <input type="text" id="name" name="name" required>
+     
+             <label for="email">Your Email:</label>
+             <input type="email" id="email" name="email" required>
+     
+             <label for="phone">Your Phone:</label>
+             <input type="text" id="phone" name="phone" required>
+     
+             <label for="subject">Subject:</label>
+             <input type="text" id="subject" name="subject">
+     
+             <label for="message">Your Message:</label>
+             <textarea id="message" name="message"></textarea>
+     
+             <input type="submit" value="Send Message" id="submit" >
+         </form>
+        </div>
+     </div>
 <!-- footer -->
 <footer>
     <div class="social-media">
