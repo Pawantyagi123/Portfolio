@@ -7,7 +7,7 @@
   scroll-behavior: smooth;
 }
 body {
-  min-height: 100vh;
+ 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -90,15 +90,15 @@ nav li:first-child {
 }
 
 .sidebar {
-  position: fixed;
+  position: absolute;
   top: 0px;
   right: 0px;
   height: 100vh;
   width: 250px;
   z-index: 999;
-  background-color: rgba(238, 229, 229, 0.885);
-  backdrop-filter: blur(5px);
-  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(24, 23, 23, 0.885);
+  
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   display: none;
   flex-direction: column;
   justify-content: flex-start;
@@ -109,15 +109,20 @@ nav li:first-child {
 }
 
 .sidebar li {
-  width: 100%;
+  width: 80%;
+  margin-left: 20px;
 }
 
 .sidebar a {
-  color: black;
+  color: rgb(243, 236, 236);
   font-family: italic;
   font-weight: 500;
 }
-
+ 
+.sidebar a:hover{
+  background: linear-gradient(40deg,rgb(200, 118, 118),rgb(117, 117, 212));
+  color: rgb(13, 13, 13);
+}
 .hideOnDesktop {
   display: none;
 }
@@ -148,15 +153,13 @@ nav li:first-child {
   align-items: center;
   flex-wrap: wrap;
   padding: 8rem;
-}
-
-.home {
+  height: 90vh;
   background: linear-gradient( 40deg,rgba(7, 7, 7, 0.599),rgba(0, 0, 0, 0.193)),url("./assest/back.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 90vh;
 }
+
 .home-info {
   display: flex;
   align-items: center;
@@ -332,7 +335,7 @@ button a {
  
 @media screen and (max-width: 768px) {
   .home-container {
-    padding: 1rem 2rem 2rem 2rem;
+    padding: 4rem 2rem 2rem 2rem;
   }
 }
 

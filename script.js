@@ -24,30 +24,7 @@ function closebar(){
   document.querySelector('.hideOnDesktop').style.display = 'block';
     }
 
-    document.addEventListener('DOMContentLoaded', function () {
-        var sidebarTags = document.querySelectorAll('.sidebar a');
     
-        sidebarTags.forEach(function (tag) {
-            tag.addEventListener('click', function (e) {
-                var targetId = this.getAttribute('href'); // Get the target ID from href attribute
-                
-                // Check if the clicked tag is for the "Contact" page
-                if (targetId === "#contact") {
-                    // Do nothing if the clicked tag is for the "Contact" page
-                    return;
-                }
-    
-                e.preventDefault(); // Prevent default anchor behavior
-                
-                var targetElement = document.querySelector(targetId); // Find the target element by ID
-    
-                if (targetElement) {
-                    // Scroll to the top of the target element
-                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
-    });
   
     function sendMail(){
         (

@@ -13,7 +13,7 @@
 </head>
 <body> 
 <!-- navbar -->
-    <div class="home">
+   <header>
     <nav>
         <ul class="sidebar">
          <li onclick="closebar()"><a href="#"><i class="fa-solid fa-xmark" style="font-size: 40px;"></i></a></li>
@@ -31,8 +31,9 @@
          <li onclick="showsidebar()" class="hideOnDesktop"><a href="#"><i class="fa-solid fa-bars" style="font-size: 30px;"></i></a></li>
         </ul>
         </nav>
-
+    </header>
         <!-- content -->
+       
 <div class="home-container" id="home">
     <div class="home-info">
 <img src="./assest/profilepic.jpg">
@@ -54,7 +55,7 @@
         <button class="button"><a href="#project">Projects</a></button>
 </div>
 </div>
-</div>
+
 
 <div class="about-container" id="about">
     <div class="head">
@@ -78,7 +79,7 @@
   </div> 
 
   <div class="skill-item">
-    <h1 style="margin-bottom: 20px;">Skills</h1>
+    <h1>Skills</h1>
     <div class="skill">
       <div>Html5</div>
       <div>Css3</div>
@@ -139,7 +140,7 @@
     <div class="contact-container" id="contact">
         <div class="contact-form">
          <h1>Contact Us</h1>
-         <form onsubmit="sendeMail(); reset(); return false;">
+         <form onsubmit="sendMail(); reset(); return false;">
              <label for="name">Your Name:</label>
              <input type="text" id="name" name="name" required>
      
