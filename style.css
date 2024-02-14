@@ -367,8 +367,9 @@ footer {
 }
 .social-media ul li {
   list-style: none;
-  padding-left: 10px;
+  padding-left: 20px;
   border: none;
+ 
 }
 
 .social-media i {
