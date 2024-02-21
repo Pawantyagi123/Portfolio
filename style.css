@@ -176,15 +176,17 @@ nav li:first-child {
   border: none;
   padding: 1rem 1.5rem 1rem 1.5rem;
   border-radius: 30px;
-  background-color: black;
+  background-color: transparent;
+  border: 2px solid rgb(209, 209, 219);
 }
 
 .button:hover {
-  border: 2px solid rgb(209, 209, 219);
+ background: linear-gradient(to  right, #3c3b38,#2d2825);
+ color: white;
 }
-button a {
+.button  {
   text-decoration: none;
-  color: white;
+  color: rgb(12, 12, 12);
   font-size: 20px;
 }
 .home-info p {
@@ -393,4 +395,18 @@ footer {
 .text p {
   font-size: 20px;
   color: white;
+}
+
+.social-media li .fa-facebook:hover{
+color: rgb(34, 73, 163);
+}
+.social-media li .fa-linkedin:hover{
+  color: rgb(35, 138, 170);
+}
+
+
+.social-media li .fa-instagram:hover{
+  color: transparent;
+  background: linear-gradient(40deg,red,blue);
+  -webkit-background-clip: text;
 }

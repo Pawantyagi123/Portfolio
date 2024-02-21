@@ -22,7 +22,7 @@
     justify-content: space-evenly;
     align-items: center;
     padding: 2rem;
-    background: linear-gradient(to right,rgba(6, 6, 6, 0.479),rgba(255, 255, 255, 0.567)),url("./assest/about.svg");
+    background: black;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -100,6 +100,7 @@
 .about-text h1{
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 padding-top: 30px;
+color: red;
 }
 
 .about-text p{
@@ -140,10 +141,9 @@ padding-top: 30px;
 }
 .skill div{
     font-size: 1.2rem;
-    background: rgba(226, 128, 128, 0.578);
     border-radius: 5px;
     font-weight: 600;
-    color: #151414;
+    color: #f2eaea;
     margin-bottom: 1rem;
     margin-right: 1rem;
     padding: 1rem 1rem;
@@ -160,16 +160,16 @@ padding-top: 30px;
 }
 
 .contact:hover{
-    background-color: #454141;
+    background-color: #151414;
 }
 
 .about-text .resume {
-    color: white;
+    color: rgb(15, 14, 14);
     padding: 1rem 1.5rem;
     border-radius: 30px;
     margin-top: 10px;
     border: none;
-    background-color: rgba(41, 173, 213, 0.551);
+    background-color: rgba(213, 226, 231, 0.551);
     text-decoration: none;
     font-size: 18px;
 }
@@ -198,3 +198,9 @@ padding-top: 30px;
 }
 }
 
+.skill>div:nth-child(odd){
+    background: linear-gradient(to right,#ff4d4d ,#13d010 );
+}
+.skill>div:nth-child(even){
+    background: linear-gradient(to right,blue,rgb(230, 195, 195));
+}

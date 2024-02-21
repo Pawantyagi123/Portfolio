@@ -1,20 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500&family=PT+Sans:wght@400;700&family=Playfair+Display:ital,wght@1,700&family=Roboto+Slab&display=swap');
 
-nav{
-   border-bottom: 1px solid white;
-}
+
 .project-container{
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
     height: auto;
+    border-top: 2px solid white;
    
 }
  body{
     background-color: black;
     color: white;
-   
  }
 .project-head{
     text-align: center;
@@ -105,12 +103,13 @@ font-family: 'Roboto Slab', serif;
 
 .project-card a{
     text-decoration: none;
-    background-color: rgba(95, 158, 160, 0.836);
-    padding: 1rem 2rem 1rem 2rem;
+    background: transparent;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     color: white;
     border-radius: 10px;
     margin-top: 10px;
     font-size: 20px;
+    border: 2px solid rgb(34, 83, 208);
 }
 @media(max-width:345px){
     .project-card a{
@@ -124,7 +123,7 @@ font-family: 'Roboto Slab', serif;
 }
 
 span{
-    color: red;
+    color: rgb(42, 225, 118);
 }
 
 h2{
@@ -140,10 +139,10 @@ h2{
     }
 }
 
-.fa-brands{
+.fa-square-github{
     color: rgb(237, 225, 225);
      font-size: 40px;
 }
-.fa-brands:hover{
+.fa-square-github:hover{
     color: rgb(137, 137, 224);
 }
