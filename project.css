@@ -8,7 +8,7 @@
     flex-direction: column;
     height: auto;
     border-top: 2px solid white;
-   
+   padding-top: 20px;
 }
  body{
     background-color: black;
