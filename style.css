@@ -196,7 +196,7 @@ nav li:first-child {
 .home-info p {
   color: rgb(11, 11, 11);
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   font-family: 'Noto Serif', serif;
 
 }
@@ -353,7 +353,7 @@ footer {
   align-items: center;
   flex-direction: column;
 }
-@media screen and (max-width: 768px) {
+@media(max-width: 768px) {
    footer {
      height: 20vh; /* Adjusted height for smaller screens */
    }
@@ -401,11 +401,11 @@ footer {
   color: white;
 }
 
-.social-media li .fa-facebook:hover{
-color: rgb(34, 73, 163);
+.social-media li .fa-twitter:hover{
+color: rgb(58, 198, 208);
 }
 .social-media li .fa-linkedin:hover{
-  color: rgb(35, 138, 170);
+  color: rgb(35, 96, 170);
 }
 
 
@@ -423,3 +423,4 @@ canvas {
   bottom: 0;
   z-index: -1;
 }
+
