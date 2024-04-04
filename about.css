@@ -138,6 +138,7 @@ color: red;
     align-items: start;
     width: 100%;
     flex-wrap: wrap;
+    cursor: pointer;
 }
 
 @media only screen and(max-width: 768px){
@@ -164,12 +165,13 @@ color: red;
     border: none;
     text-decoration: none;
     margin-top: 20px;
-    transition: all ease-in-out 0.7s;
+    transition: all 0.7s ease-in;
 }
 
 .contact:hover{
     background-color: #151414;
     border: 1px solid blueviolet;
+    
 }
 
 .about-text .resume {
