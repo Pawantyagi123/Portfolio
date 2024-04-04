@@ -46,7 +46,13 @@ function closebar(){
        
         emailjs.send(serviceId,templeteId,params)
         .then( res =>{
-         alert("Email Sent Successfully")
+          Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "Your Message Sent Successfully",
+            showConfirmButton: true,
+            timer: 1500
+          });
         })
     }
     
