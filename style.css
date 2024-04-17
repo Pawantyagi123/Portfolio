@@ -108,7 +108,6 @@ nav li:first-child {
   width: 250px;
   z-index: 999;
   background-color: rgba(24, 23, 23, 0.885);
-  
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   display: none;
   flex-direction: column;
@@ -116,7 +115,7 @@ nav li:first-child {
   align-items: flex-start;
   transition: all 0.5s ease-in-out;
   padding: 1rem;
-  
+  transition: width 0.5s ease, right 0.5s ease;
 }
 
 .sidebar li {
@@ -189,17 +188,18 @@ nav li:first-child {
   border-radius: 30px;
   background-color: transparent;
   border: 2px solid rgb(209, 209, 219);
+  text-decoration: none;
+  color: rgb(12, 12, 12);
+  font-size: 20px;
 }
 
 .button:hover {
  background: linear-gradient(to  right, #3c3b38,#2d2825);
  color: white;
+ border: 2px solid blueviolet;
+ transition: all 0.6s ease-in-out;
 }
-.button  {
-  text-decoration: none;
-  color: rgb(12, 12, 12);
-  font-size: 20px;
-}
+
 .home-info p {
   color: rgb(11, 11, 11);
   text-align: center;
@@ -239,6 +239,7 @@ nav li:first-child {
 .name span { 
   animation: animate 3s linear 3; 
   color: transparent;
+  transition: all 0.8s ease-in;
   background: linear-gradient(40deg,red,blue);
   -webkit-background-clip: text;
 }
@@ -358,7 +359,15 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
+}
+
+@media(max-width:900px){
+  footer{
+    flex-direction: column;
+    justify-content: space-around;
+    height: 25vh;
+  }
 }
 @media(max-width: 768px) {
    footer {
@@ -367,7 +376,7 @@ footer {
  }
  
  /* Media query for screens smaller than 480px */
- @media screen and (max-width: 480px) {
+ @media (max-width: 480px) {
    footer {
      height: 25vh; /* Adjusted height for even smaller screens */
    }
@@ -431,3 +440,19 @@ canvas {
   z-index: -1;
 }
 
+.clock-container{
+  display: flex;
+  flex-direction: column;
+}
+
+#digitle-clock{
+  background-color: rgb(11, 11, 11);
+  font-size: 25px;
+  height: 30px;
+  color: rgb(24, 165, 19);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  flex-direction: column;
+}

@@ -135,3 +135,9 @@ function animate() {
 animate();
 
 
+const clock = document.getElementById("digitle-clock");
+
+setInterval(()=>{
+  const date = new Date();
+  clock.innerHTML = date.toLocaleTimeString()
+},1000);
